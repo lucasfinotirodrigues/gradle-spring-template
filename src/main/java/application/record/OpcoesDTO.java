@@ -5,7 +5,7 @@ import application.model.Opcoes;
 public record OpcoesDTO(
     long id,
     String descricao,
-    String correto,
+    Boolean correto,
     QuestoesDTO questoes
 ) {
     public OpcoesDTO(Opcoes opcoes) {

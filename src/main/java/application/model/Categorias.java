@@ -1,5 +1,6 @@
 package application.model;
 
+import application.record.CategoriasDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,4 +20,10 @@ public class Categorias {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
+
+    public Categorias(CategoriasDTO dto) {
+        this.id = dto.id();
+        this.nome = dto.nome();
+    }
+
 }

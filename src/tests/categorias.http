@@ -1,0 +1,29 @@
+categoria.http
+ 
+@url = https://bookish-umbrella-q5rj5r6prj6397px-8080.app.github.dev
+ 
+###
+GET {{url}}/categorias
+ 
+###
+GET {{url}}/categorias/1
+ 
+###
+POST {{url}}/categorias
+Content-Type: application/json
+ 
+{
+    "nome" : "Amanda"
+}
+ 
+###
+PUT {{url}}/categorias/2
+Content-Type: application/json
+ 
+{
+ 
+}
+ 
+###
+DELETE {{url}}/categorias/1
+ 

@@ -1,0 +1,26 @@
+@url = https://bookish-umbrella-q5rj5r6prj6397px-8080.app.github.dev/
+
+
+GET {{url}}/opcoes
+ 
+###
+GET {{url}}/opcoes/2
+ 
+###
+POST {{url}}/opcoes
+Content-Type: application/json
+ 
+{
+    "descricao" : "A"
+}
+ 
+###
+PUT {{url}}/opcoes/2
+Content-Type: application/json
+ 
+{
+ 
+}
+ 
+###
+DELETE {{url}}/opcoes/1

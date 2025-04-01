@@ -1,0 +1,25 @@
+@url = https://bookish-umbrella-q5rj5r6prj6397px-8080.app.github.dev/
+
+GET {{url}}/questoes
+ 
+###
+GET {{url}}/questoes/2
+ 
+###
+POST {{url}}/questoes
+Content-Type: application/json
+ 
+{
+    "enunciado" : "A"
+}
+ 
+###
+PUT {{url}}/questoes/2
+Content-Type: application/json
+ 
+{
+   
+}
+ 
+###
+DELETE {{url}}/questoes/1

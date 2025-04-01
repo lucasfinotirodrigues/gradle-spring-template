@@ -1,8 +1,6 @@
 package application.model;
 
-
 import application.record.OpcoesDTO;
-import application.record.QuestoesDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,7 +22,7 @@ public class Opcoes {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String descricao;
-    private String correto;
+    private Boolean correto;
 
     @ManyToOne
     @JoinColumn(name = "id_questoes", nullable = false)

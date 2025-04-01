@@ -28,8 +28,6 @@ public class Questoes {
     @JoinColumn(name = "id_categorias", nullable = false)
     private Categorias categorias;
 
-    private String autores;
-
     public Questoes(QuestoesDTO record) {
         this.id = record.id();
         this.enunciado = record.enunciado();
